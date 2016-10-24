@@ -8,7 +8,7 @@ angular.module('Display', [])
     var locInfo = Locations.getLoc();
     $scope.address = locInfo.address;
     $scope.location = locInfo.location;
-  }
+  };
 
   // Gets map location upon controller mount
   $scope.getLocation();

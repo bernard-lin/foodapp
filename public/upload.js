@@ -3,7 +3,7 @@ angular.module('FileUpload', ['ngFileUpload','ngAutocomplete'])
 
   $scope.result = false;
   $scope.error = false;
-  
+
   // Fired upon ng-click of button in upload.html view
   $scope.uploadPic = function(file, details) {
 
@@ -16,7 +16,7 @@ angular.module('FileUpload', ['ngFileUpload','ngAutocomplete'])
       name: details.name,
       address: details.formatted_address,
       id: details.place_id
-    }
+    };
 
   // Using the Upload service from ng-file-upload directive to call the imgur API
     file.upload = Upload.upload({
@@ -39,6 +39,6 @@ angular.module('FileUpload', ['ngFileUpload','ngAutocomplete'])
       $scope.error = true;
     });
 
-  }
+  };
 
 }]);

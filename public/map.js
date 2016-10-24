@@ -20,10 +20,10 @@ angular.module('Map', ['ngMap'])
     var location = {
       address: mapModule.place.formatted_address,
       location: mapModule.place.geometry.location
-    }
+    };
 
     Locations.saveLoc(location);
-  }
+  };
 
 //render Map
   NgMap.getMap().then(function(map) {

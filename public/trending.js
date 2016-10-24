@@ -8,7 +8,7 @@ angular.module('Trending', [])
     Pictures.getAll()
     .then(function(resp) {
       $scope.pics = [];
-     // Logic to throw out anything that is not actually saved in the database 
+     // Logic to throw out anything that is not actually saved in the database
       for(var key in resp) {
         for(var key2 in resp[key]) {
           if (typeof resp[key][key2] === 'object' && !Array.isArray(resp[key][key2])){
@@ -20,7 +20,7 @@ angular.module('Trending', [])
         }
       }
     });
-  }
+  };
 
   // Gets the pictures when the controller is mounted
   $scope.getPics();
@@ -40,6 +40,6 @@ angular.module('Trending', [])
 
     // Send updated information to database via a put request
     Pictures.like(picture);
-  }
+  };
 
 }]);

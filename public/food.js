@@ -23,5 +23,5 @@ angular.module("foodApp", ['FileUpload','ngRoute','foodServices','Map', 'Trendin
 .controller('DefaultCtrl',['$scope', '$location', function($scope, $location) {
   $scope.isActive = function(route) {
     return route === $location.path();
-  }
+  };
 }]);
