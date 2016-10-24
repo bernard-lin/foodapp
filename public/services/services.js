@@ -8,7 +8,7 @@ angular.module('foodServices', [])
       method: 'GET',
       url: '/places'
     });
-  }
+  };
 
   // Sends request to server to add one photo
   var addOne = function(picture) {
@@ -17,7 +17,7 @@ angular.module('foodServices', [])
       url: '/places',
       data: picture
     });
-  }
+  };
 
   // Sends request to server to increment numbers of likes for one photo
   var like = function(picture) {
@@ -26,13 +26,13 @@ angular.module('foodServices', [])
       url: '/places',
       data: picture
     });
-  }
+  };
 
   return {
     getAll: getAll,
     addOne: addOne,
     like: like
-  }
+  };
 
 }])
 
@@ -43,16 +43,16 @@ angular.module('foodServices', [])
   // Map location is saved in the loc object
   var saveLoc = function(location) {
     loc = location;
-  }
+  };
 
   // Returns the loc object (called in display.js)
   var getLoc = function() {
     return loc;
-  }
+  };
 
   return {
     saveLoc: saveLoc,
     getLoc: getLoc
-  }
+  };
 
 }]);
