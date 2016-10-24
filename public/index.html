@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Snappy Dish</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
   <link href='style.css' rel='stylesheet'>
   <link href='pageStyle.css' rel='stylesheet'>
   <script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.js"></script>
@@ -23,6 +23,13 @@
 </head>
 
 <body ng-app="foodApp">
+
+  <div class="bgimg-1">
+    <div class="caption">
+     <span class="border">Snappy Dish</span>
+   </div>
+  </div>
+<div class='content'>
 <!--
   <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 
@@ -35,7 +42,7 @@
   </div>
 </div>
 -->
-<div ng-controller='MapCtrl as mapModule'>
+<div ng-controller='MapCtrl as mapModule' class='left'>
   <!-- <form name='mapForm'>
   <input id="pac-input" class="controls" type="text" ng-autocomplete ng-model='mapautocomplete' placeholder="Search Box">
 </form>
@@ -66,7 +73,7 @@
 <a href="#upload">Upload</a>
 <a href="#display">Display</a>
 -->
-<div ng-controller='DefaultCtrl'>
+<div ng-controller='DefaultCtrl' class='right'>
   <ul>
     <li ng-class="{'active': isActive('/trending')}"><a href="#trending">Trending</a></li>
     <li ng-class="{'active': isActive('/upload')}"><a href="#upload">Upload</a></li>
@@ -75,6 +82,7 @@
 </div>
 
 <ng-view> </ng-view>
+</div>
 </body>
 
 </html>
