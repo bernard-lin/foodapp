@@ -47,9 +47,9 @@
 
       <div ng-controller='DefaultCtrl' class='right'>
         <ul>
-          <li ng-class="{'active': isActive('/trending')}"><a href="#trending">Trending</a></li>
-          <li ng-class="{'active': isActive('/upload')}"><a href="#upload">Upload</a></li>
-          <li ng-class="{'active': isActive('/display')}"><a href="#display">Display</a></li>
+          <a href="#trending"><li ng-class="{'active': isActive('/trending')}">Trending</li></a>
+          <a href="#upload"><li ng-class="{'active': isActive('/upload')}">Upload</li></a>
+          <a href="#display"><li ng-class="{'active': isActive('/display')}">Display</li></a>
         </ul>
       </div>
 

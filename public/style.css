@@ -143,19 +143,19 @@ li {
   border: 2px solid blue;
   border-radius: 10px;
   text-align: center;
-  color: lightblue;
+  color: blue;
 }
 
 .active {
   background: blue;
 }
 
-li a {
+a {
   color: blue;
   text-decoration: none;
 }
 
-li.active a {
+a li.active {
   color: white;
   text-decoration: none;
 }
